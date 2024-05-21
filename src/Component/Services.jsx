@@ -8,42 +8,42 @@ const Services = () => {
       {
         
         "id": 1,
-        "Logo":< FaLaptopCode  className="text-7xl text-gray-500  "/>,
+        "Logo":< FaLaptopCode  className="text-7xl   "/>,
         "title": "Web Design",
         "body": "In nisi tortor, consequat eu semper ut, consequat in massa. Maecenas at odio a felis commodo pulvinar quis eu neque."
       },
       {
         
         "id": 2,
-        "Logo":< MdOutlineWebStories  className="text-7xl text-gray-500  "/>,
+        "Logo":< MdOutlineWebStories  className="text-7xl   "/>,
         "title": "Web Development",
         "body": "In nisi tortor, consequat eu semper ut, consequat in massa. Maecenas at odio a felis commodo pulvinar quis eu neque."
       },
       {
         
         "id": 3,
-        "Logo":< FaPalette  className="text-7xl text-gray-500  "/>,
+        "Logo":< FaPalette  className="text-7xl   "/>,
         "title": "UI/UX Design",
         "body": "In nisi tortor, consequat eu semper ut, consequat in massa. Maecenas at odio a felis commodo pulvinar quis eu neque."
       },
       {
         
         "id": 4,
-        "Logo":< FaMobileAlt  className="text-7xl text-grey  "/>,
+        "Logo":< FaMobileAlt  className="text-7xl   "/>,
         "title": "App Design & Develop",
         "body": "In nisi tortor, consequat eu semper ut, consequat in massa. Maecenas at odio a felis commodo pulvinar quis eu neque."
       },
       {
         
         "id": 5,
-        "Logo":< FaPaintBrush  className="text-7xl text-gray-500  "/>,
+        "Logo":< FaPaintBrush  className="text-7xl   "/>,
         "title": "Graphic Design",
         "body": "In nisi tortor, consequat eu semper ut, consequat in massa. Maecenas at odio a felis commodo pulvinar quis eu neque."
       },
       {
         
         "id": 6,
-        "Logo":< FaChartLine  className="text-7xl text-gray-500  "/>,
+        "Logo":< FaChartLine  className="text-7xl   "/>,
         "title": "SEO Marketing",
         "body": "In nisi tortor, consequat eu semper ut, consequat in massa. Maecenas at odio a felis commodo pulvinar quis eu neque."
       }
