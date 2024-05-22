@@ -13,10 +13,13 @@
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "axios": "^1.7.1",
     "font-awesome": "^4.7.0",
+    "lottie-react": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
-    "react-router-dom": "^6.23.1"
+    "react-modal-image": "^2.6.0",
+    "react-router-dom": "^6.23.1",
+    "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

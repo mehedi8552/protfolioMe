@@ -23,10 +23,10 @@ const NavBar = () => {
 
         
       <div className="hidden md:flex space-x-4 font-sans font-semibold text-grey">
-        <a href="#" className="text-black hover:text-pink-500">
+        <a href="/" className="text-black hover:text-pink-500">
           Home
         </a>
-        <a href="#" className="text-black hover:text-pink-500">
+        <a href="/about-page" className="text-black hover:text-pink-500">
           About Us
         </a>
         <a href="#" className="text-black hover:text-pink-500">
@@ -38,7 +38,7 @@ const NavBar = () => {
         <a href="#" className="text-black hover:text-pink-500">
           Portfolio
         </a>
-        <a href="#" className="text-black hover:text-pink-500">
+        <a href="/blog-page" className="text-black hover:text-pink-500">
           Blog
         </a>
         <a href="#" className="text-black hover:text-pink-500 pr-8">

@@ -28,13 +28,6 @@ const Services = () => {
       },
       {
         
-        "id": 4,
-        "Logo":< FaMobileAlt  className="text-7xl   "/>,
-        "title": "App Design & Develop",
-        "body": "In nisi tortor, consequat eu semper ut, consequat in massa. Maecenas at odio a felis commodo pulvinar quis eu neque."
-      },
-      {
-        
         "id": 5,
         "Logo":< FaPaintBrush  className="text-7xl   "/>,
         "title": "Graphic Design",
