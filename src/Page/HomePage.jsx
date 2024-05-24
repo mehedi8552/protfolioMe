@@ -3,8 +3,9 @@ import Layout from "../Layout/Layout";
 import Hero from "../Component/Hero";
 import Services from "../Component/Services";
 import Hire from "../Component/Hire";
-import Work from "../Component/Work";
 import Front from "../Component/Front";
+import Protfolio from "../Component/Protfolio";
+import BlogCard from "../Component/BlogCard";
 
 const Home = () => {
   return (
@@ -13,7 +14,8 @@ const Home = () => {
       <Hero />
       <Services/>
       <Hire/>
-      <Work/>
+      <Protfolio/>
+      <BlogCard/>
     </Layout>
   );
 };

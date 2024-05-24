@@ -41,7 +41,7 @@ const NavBar = () => {
         <a href="/blog-page" className="text-black hover:text-pink-500">
           Blog
         </a>
-        <a href="#" className="text-black hover:text-pink-500 pr-8">
+        <a href="/contact-us" className="text-black hover:text-pink-500 pr-8">
           Contact Us
         </a>
         <div className="max-md:hidden pr-16">

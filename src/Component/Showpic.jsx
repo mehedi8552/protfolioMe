@@ -34,7 +34,7 @@ const Showpic = () => {
 
   const View = useLottie(options);
   return (
-    <section class="mx-auto w-fit p-12">
+    <section class="mx-auto w-fit">
       <div class="grid grid-cols-4 gap-4 ">
         {data.map((index, i) => (
           <div class=" relative overflow-hidden group">

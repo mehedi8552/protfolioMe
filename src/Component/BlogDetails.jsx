@@ -1,15 +1,30 @@
 import React from "react";
-import blogData from "../assets/data/blog.json";
-import { FaTags, FaUser, FaSearch, FaArrowRight } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
-const Blog = () => {
+import Products from "../assets/data/blog";
+import {
+  FaTags,
+  FaUser,
+  FaSearch,
+  FaArrowRight,
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaMailBulk,
+} from "react-icons/fa";
+import { useParams } from "react-router-dom";
+
+const BlogDetails = () => {
+
+  const { id } = useParams();
+  const numericId = parseInt(id, 10); // Convert id to a number
+  const data = Products.find((item) => item.id === numericId);
+
   return (
     <div className="grid grid-flow-col grid-cols-2 px-32 my-16">
       <div className=" col-span-2">
-        {blogData.map((index) => (
+        {data ? (
           <div className="">
             <div className="space-y-4 w-fit mx-10  bg-white shadow-lg my-8">
-              <img className="" src={index.img} alt="" />
+              <img className="" src={data.img} alt="" />
               <div className="pl-8 pb-6 space-y-4">
                 <div className="flex justify-start">
                   <FaUser className="mt-3 pr-2 text-pink text-2xl" />
@@ -18,18 +33,36 @@ const Blog = () => {
                   <span className="mt-3">Technology</span>
                 </div>
                 <p className="font-abc text-grey2 font-bold text-2xl ">
-                  {index.title}
+                  {data.title}
                 </p>
-                <p className=" text-grey2 ">{index.body.slice(0,80)}....</p>
-                <NavLink to={`/blog-details/${index.id}`}>
-                  <button class=" mt-4 flex relative h-10 w-28 items-center justify-center overflow-hidden bg-grey text-white shadow-2xl rounded-full transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-green before:duration-500 before:ease-out hover:shadow-pink hover:before:h-56 hover:before:w-56">
-                    <span class="relative z-10 ">READ MORE</span>
-                  </button>
-                </NavLink>
+                <p className=" text-grey2  ">{data.body}</p>
+                <ul className="flex gap-2">
+                  <span className="font-bold pt-1">Tags:</span>
+                  <li className="py-2 px-2 bg-white3 border">Html</li>
+                  <li className="py-2 px-2 bg-white3 border">Node.js</li>
+                  <li className="py-2 px-2 bg-white3 border">Express.js</li>
+                </ul>
+                <ul className="flex gap-2">
+                  <span className="font-bold pt-1">Share:</span>
+                  <a className="py-2 px-2  bg-white3 border  hover:bg-pink hover:text-white">
+                    <FaFacebookF />
+                  </a>
+                  <a className="py-2 px-2  bg-white3 border  hover:bg-pink hover:text-white">
+                    <FaLinkedinIn />
+                  </a>
+                  <a className="py-2 px-2  bg-white3 border  hover:bg-pink hover:text-white">
+                    <FaMailBulk />
+                  </a>
+                  <a className="py-2 px-2  bg-white3 border  hover:bg-pink hover:text-white">
+                    <FaInstagram />
+                  </a>
+                </ul>
               </div>
             </div>
           </div>
-        ))}
+        ) : (
+          <p>Data not found</p>
+        )}
       </div>
       <div className="w-96 h-fit my-8">
         <div className="bg-white shadow-lg p-4">
@@ -157,4 +190,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogDetails;
