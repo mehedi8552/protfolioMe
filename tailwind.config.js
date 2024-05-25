@@ -22,6 +22,7 @@ export default {
       grey2:'#0B2B3C',
       orange:'#f97316',
       green:'#3E57D0',
+      red:'#FF0000',
      },
      backgroundImage: {
       'hero-pattern': "url('./src/assets/bg.png')",

@@ -10,7 +10,8 @@ Currently, two official plugins are available:
 
 
 left->
-404 page
+404 page- done-25/may
+Responsive - done-25/may
 Service Details
 Complete all setup page
 Lazy Loader

@@ -41,38 +41,39 @@ const Contact = () => {
             amet maximus est.
           </h1>
         </div>
-        <div className="flex justify-center mt-14  md:mb-10">
-          {/* ref={form} onSubmit={sendEmail} */}
-          <form className="space-y-3 ">
+        {/* ref={form} onSubmit={sendEmail} */}
+        <div class="flex justify-center mx-10 mt-14 md:mb-10">
+          <form class="w-full md:w-full md:mx-80 space-y-3">
             <div>
-              <p className="font-semibold text-grey2 pb-2">Your Name</p>
+              <p class="font-semibold text-grey2 pb-2">Your Name</p>
               <input
-                className="w-80 h-10 md:w-full border border-grey2  focus:outline-pink"
+                class="w-full h-10 border border-grey2 focus:outline-pink px-3"
                 type="text"
                 name="u_name"
               />
             </div>
             <div>
-            <p className="font-semibold text-grey2 pb-2">Your Email</p>
-            <input
-              placeholder=" Email"
-              className="w-80 h-10 md:w-96 border border-grey2  focus:outline-pink"
-              type="email"
-              name="u_email"
-            />
+              <p class="font-semibold text-grey2 pb-2">Your Email</p>
+              <input
+                class="w-full h-10 border border-grey2 focus:outline-pink px-3"
+                type="email"
+                name="u_email"
+              />
             </div>
             <div>
-            <p className="font-semibold text-grey2 pb-2"></p>
-            <textarea
-              placeholder=" Message"
-              className="w-80 h-20 md:w-96 border border-grey2  focus:outline-pink"
-              name="message"
-            />
+              <p class="font-semibold text-grey2 pb-2">Your Message</p>
+              <textarea
+                class="w-full h-20 border border-grey2 focus:outline-pink px-3"
+                name="message"
+              ></textarea>
             </div>
-            <input
-              className="w-80 h-10 md:w-96 hover:shadow-pink cursor-pointer bg-green text-white"
+
+            <button
               type="submit"
-              value="Send Message" />
+              className="relative mt-4 md:mt-8 flex h-12 w-full items-center justify-center overflow-hidden bg-pink  text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0  before:bg-green before:duration-500 before:ease-in-out hover:shadow-pink hover:before:h-12 hover:before:w-full"
+            >
+              <span className="relative z-10">Send Message</span>
+            </button>
           </form>
         </div>
       </div>

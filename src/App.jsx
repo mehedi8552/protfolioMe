@@ -4,6 +4,7 @@ import AboutPage from "./Page/AboutPage"
 import BlogPage from "./Page/BlogPage"
 import BlogDetailsPage from "./Page/BlogDetailsPage"
 import ContactPage from "./Page/ContactPage"
+import Error from "./Component/Error"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path="/blog-page" element = {<BlogPage/>}  />
       <Route path="/blog-details/:id" element = {<BlogDetailsPage/>}  />
       <Route path="/contact-us" element = {<ContactPage/>}  />
+      <Route path="*" element = {<Error/>}  />
       
       </Routes> 
     </BrowserRouter>
