@@ -70,7 +70,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="relative mt-4 md:mt-8 flex h-12 w-full items-center justify-center overflow-hidden bg-pink  text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0  before:bg-green before:duration-500 before:ease-in-out hover:shadow-pink hover:before:h-12 hover:before:w-full"
+              className="relative mt-4 md:mt-8 flex h-12 w-full items-center justify-center overflow-hidden bg-pink  text-white transition-all before:absolute before:h-0 before:w-0  before:bg-green before:duration-500 before:ease-in-out hover:shadow-pink hover:before:h-12 hover:before:w-full"
             >
               <span className="relative z-10">Send Message</span>
             </button>
