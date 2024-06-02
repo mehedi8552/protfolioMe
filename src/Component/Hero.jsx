@@ -8,8 +8,6 @@ import {
   // FaPhone,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
-import { RxHeight } from "react-icons/rx";
 const Hero = () => {
   return (
 <section className="container md:flex md:justify-center md:items-center h-screen mb-24">
@@ -38,7 +36,7 @@ const Hero = () => {
       </p>
       <div className="flex justify-start space-x-2 pt-2 mb-4">
         <div className="h-12 w-12 rounded-full flex justify-center items-center bg-grey2 hover:bg-pink transition hover:-translate-y-1 hover:scale-110">
-          <NavLink to={"./"}>
+          <NavLink to={"#"}>
             <FaFacebookF color="white" />
           </NavLink>
         </div>
@@ -59,12 +57,12 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex justify-start space-x-2">
-        <button className="relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-grey text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-pink before:duration-500 before:ease-out hover:shadow-pink hover:before:h-56 hover:before:w-56">
+        <NavLink to={'/contact-us'}  className="relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-grey text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-pink before:duration-500 before:ease-out hover:shadow-pink hover:before:h-56 hover:before:w-56">
           <span className="relative z-10">HIRE ME</span>
-        </button>
-        <button className="relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-grey text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-pink before:duration-500 before:ease-out hover:shadow-pink hover:before:h-56 hover:before:w-56">
+        </NavLink>
+        <NavLink to={'/contact-us'}  className="relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-grey text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-pink before:duration-500 before:ease-out hover:shadow-pink hover:before:h-56 hover:before:w-56">
           <span className="relative z-10">LEARN MORE</span>
-        </button>
+        </NavLink>
       </div>
     </div>
   </div>
