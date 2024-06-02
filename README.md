@@ -13,7 +13,7 @@ left->
 404 page- done-25/may
 Responsive - done-25/may
 Scroll top btn - done 31/may
-Service Details
+Service Details - done 02/jun
 Complete all setup page
 Lazy Loader
 Enter my all Data

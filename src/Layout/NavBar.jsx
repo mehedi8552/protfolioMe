@@ -29,13 +29,10 @@ const NavBar = () => {
         <a href="/about-page" className="text-black hover:text-pink-500">
           About Us
         </a>
-        <a href="#" className="text-black hover:text-pink-500">
-          Page
-        </a>
-        <a href="#" className="text-black hover:text-pink-500">
+        <a href="/service-page" className="text-black hover:text-pink-500">
           Services
         </a>
-        <a href="#" className="text-black hover:text-pink-500">
+        <a href="/protfolio-page" className="text-black hover:text-pink-500">
           Portfolio
         </a>
         <a href="/blog-page" className="text-black hover:text-pink-500">
