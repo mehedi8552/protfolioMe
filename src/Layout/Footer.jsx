@@ -1,15 +1,14 @@
 import React from "react";
+import { FaXTwitter } from "react-icons/fa6";
 import {
   FaFacebookF,
-  // FaInstagram,
-  // FaLinkedinIn,
-  // FaMailBulk,
-  // FaPhone,
+  FaInstagram,
+  FaLinkedinIn,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className=" sm:w-fit sm:space-y-4 md:flex md:justify-start md:space-x-2 md:w-fit p-10 py-10 md:pl-16  mt-64   lg:mt-0 xl:mt-2 bg-black font-abc">
+    <footer className=" sm:w-fit sm:space-y-4 md:flex md:justify-start md:space-x-2 md:w-fit p-10 py-10 md:pl-16 bg-black font-abc">
       <div className="md:w-5/12">
         <div className="text-2xl font-bold">
           <span className="text-white">CW</span>
@@ -22,18 +21,23 @@ const Footer = () => {
         </p>
         <div className="flex justify-start space-x-2 pt-2 ">
           <div className="h-12 w-12 rounded-full flex justify-center items-center bg-grey2 hover:bg-pink transition hover:-translate-y-1 hover:scale-110">
-            <NavLink to={"./"}>
-              <FaFacebookF color="white" />
-            </NavLink>
-          </div>
-          <div className="h-12 w-12 rounded-full flex justify-center items-center bg-grey2 hover:bg-pink transition hover:-translate-y-1 hover:scale-110">
-            <a href="#">
+            <a href="https://www.facebook.com/sahariar.hasan.24/">
               <FaFacebookF color="white" />
             </a>
           </div>
           <div className="h-12 w-12 rounded-full flex justify-center items-center bg-grey2 hover:bg-pink transition hover:-translate-y-1 hover:scale-110">
-            <a href="#">
-              <FaFacebookF color="white" />
+            <a href="https://www.instagram.com/sahariar_12/">
+              <FaInstagram color="white" />
+            </a>
+          </div>
+          <div className="h-12 w-12 rounded-full flex justify-center items-center bg-grey2 hover:bg-pink transition hover:-translate-y-1 hover:scale-110">
+            <a href="https://www.instagram.com/sahariar_12/">
+              <FaLinkedinIn color="white" />
+            </a>
+          </div>
+          <div className="h-12 w-12 rounded-full flex justify-center items-center bg-grey2 hover:bg-pink transition hover:-translate-y-1 hover:scale-110">
+            <a href="https://x.com/mahadi_24">
+              <FaXTwitter color="white" />
             </a>
           </div>
         </div>

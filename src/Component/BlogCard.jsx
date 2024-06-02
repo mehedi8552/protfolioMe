@@ -1,6 +1,7 @@
 import React from "react";
 import blogData from "../assets/data/blog";
-import { FaTags, FaUser, FaSearch, FaArrowRight } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import { FaTags, FaUser } from "react-icons/fa";
 const BlogCard = () => {
   return (
 <div>
@@ -13,8 +14,9 @@ const BlogCard = () => {
         </p>
       </div>
     </div>
-    <div className="flex justify-center px-4 md:px-16 lg:px-32 my-16">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="mx-20 xl:mx-32 md:mx-28">
+    {/* grid gap-6 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {blogData.map((index) => (
           <div key={index.id} className="space-y-4 w-full bg-white shadow-lg my-8">
             <img className="w-full h-64 object-cover" src={index.img} alt="" />
@@ -29,9 +31,11 @@ const BlogCard = () => {
                 {index.title}
               </p>
               <p className="text-grey2">{index.body.slice(0, 70)}...</p>
-              <button className="flex relative h-10 w-28 items-center justify-center overflow-hidden bg-grey text-white shadow-2xl rounded-full transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-green before:duration-500 before:ease-out hover:shadow-pink hover:before:h-56 hover:before:w-56">
-                <span className="relative z-10">READ MORE</span>
-              </button>
+              <NavLink to={`/blog-details/${index.id}`}>
+                  <button className="mt-4 flex h-10 w-28 items-center justify-center bg-grey text-white shadow-2xl rounded-full transition-all hover:shadow-pink">
+                    <span className="relative z-10">READ MORE</span>
+                  </button>
+                </NavLink>
             </div>
           </div>
         ))}

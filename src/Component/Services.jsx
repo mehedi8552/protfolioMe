@@ -17,8 +17,8 @@ const Services = () => {
           </h1>
         </div>
       </div>
-      <div className="mx-4 md:mx-28">
-        <div className="grid gap-6 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10">
+      <div className="mx-20 md:mx-28">
+        <div className="grid gap-6 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10">
           {data.map((index) => (
             <div
               key={index.id}

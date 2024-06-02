@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hire = () => {
   return (
@@ -13,9 +14,9 @@ const Hire = () => {
         done.
       </p>
       <div className="flex items-center justify-center">
-        <button className="my-8 flex relative h-[50px] w-40 items-center justify-center overflow-hidden bg-grey text-white shadow-2xl rounded-full transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-green before:duration-500 before:ease-out hover:shadow-pink hover:before:h-56 hover:before:w-56">
+        <Link to={"/contact-us"} className="my-8 flex relative h-[50px] w-40 items-center justify-center overflow-hidden bg-grey text-white shadow-2xl rounded-full transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-green before:duration-500 before:ease-out hover:shadow-pink hover:before:h-56 hover:before:w-56">
           <span className="relative z-10">HIRE ME</span>
-        </button>
+        </Link>
       </div>
     </div>
   </div>

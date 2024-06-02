@@ -103,8 +103,8 @@ const Protfolio = () => {
           App
         </button>
       </div>
-      <section className="mx-auto w-full p-4 md:p-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <section className="mx-20 md:mx-28">
+        <div className="grid gap-6 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10">
           {filteredProducts.map((index, i) => (
             <div key={index.id} className="relative overflow-hidden group">
               <img
