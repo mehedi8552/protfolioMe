@@ -1,5 +1,5 @@
 import React from "react";
-
+import resume from "../assets/MD.Mehedi Hasan.pdf"
 import image from "../assets/hero.png";
 
 import Model from "../Component/Helper/VideoBtn.jsx";
@@ -23,7 +23,7 @@ const Front = () => {
           </p>
           <div className="flex flex-col md:flex-row justify-start">
             <button className="relative mt-4 md:mt-8 flex h-[50px] w-40 items-center justify-center overflow-hidden bg-pink rounded-md text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-md before:bg-green before:duration-500 before:ease-out hover:shadow-pink hover:before:h-56 hover:before:w-56">
-              <span className="relative z-10">DOWNLOAD CV</span>
+              <a className="relative z-10" href={resume} download={resume}>DOWNLOAD CV</a>
             </button>
             <button>
               <Model/>
