@@ -19,20 +19,20 @@ const Hero2 = () => {
   </div>
   <div className="md:w-6/12 w-full my-2 pl-4">
     <div className="w-full md:w-10/12 md:text-left text-justify space-y-6">
-      <p className="text-2xl md:text-4xl font-bold font-abc h-auto w-auto px-4 pt-4">Md Mehedi Hasan</p>
+      <p className="text-2xl md:text-4xl font-bold font-abc h-auto w-auto px-4 pt-4 text-card">Md Mehedi Hasan</p>
       <p className="text-xl md:text-3xl font-bold text-grey2 font-abc h-auto w-auto px-4">
-        A professional web designer & developer
+        A professional web developer & designer  
       </p>
       <p className="text-grey h-auto w-auto px-4">
         I design and develop services for customers specializing creating
         stylish, modern websites, web services and online stores. My passion
         is to design digital user experiences through meaningful interactions.
-        Check out my Portfolio
+        Check out my Portfolio.
       </p>
-      <p className="text-grey h-auto w-auto px-4">
+      {/* <p className="text-grey h-auto w-auto px-4">
         I design and develop services for customers specializing creating
         stylish, modern websites, web services and online stores.
-      </p>
+      </p> */}
       <div className="flex justify-start space-x-2 px-4 pt-2 mb-4">
         <div className="h-12 w-12 rounded-full flex justify-center items-center bg-grey2 hover:bg-pink transition hover:-translate-y-1 hover:scale-110">
           <a href="https://www.facebook.com/sahariar.hasan.24/">

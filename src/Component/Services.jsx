@@ -12,8 +12,7 @@ const Services = () => {
             My Services
           </h1>
           <h1 className="flex justify-center text-xl px-4 md:px-8 text-center text-grey2 mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit
-            amet maximus est.
+          Providing expert Web Design, Web Development, UI/UX Design, and Graphic Design.
           </h1>
         </div>
       </div>

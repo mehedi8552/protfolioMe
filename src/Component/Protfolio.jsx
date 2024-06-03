@@ -1,49 +1,11 @@
 import React, { useState } from "react";
 import lodash from "lodash";
+import products from "./Helper/ProtfolioData";
 import { FaLink } from "react-icons/fa";
 import Eyebtn from "../assets/eye1.png";
 import ModalImage from "react-modal-image";
+import { Link } from "react-router-dom";
 const Protfolio = () => {
-  const products = [
-    {
-      id: 1,
-      title: "Design Project 1",
-      category: "Design",
-      image: "https://cdn.dummyjson.com/product-images/1/1.jpg",
-    },
-    {
-      id: 2,
-      title: "Development Project 1",
-      category: "Development",
-      image: "https://cdn.dummyjson.com/product-images/1/1.jpg",
-    },
-    {
-      id: 3,
-      title: "App Project 1",
-      category: "App",
-      image: "https://cdn.dummyjson.com/product-images/1/1.jpg",
-    },
-    {
-      id: 4,
-      title: "Design Project 2",
-      category: "Design",
-      image: "https://cdn.dummyjson.com/product-images/1/1.jpg",
-    },
-    {
-      id: 5,
-      title: "Development Project 2",
-      category: "Development",
-      image: "https://cdn.dummyjson.com/product-images/1/1.jpg",
-    },
-    {
-      id: 6,
-      title: "App Project 2",
-      category: "App",
-      image: "https://cdn.dummyjson.com/product-images/1/1.jpg",
-    },
-    // Add more product objects as needed...
-  ];
-
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [filteredProducts, setFilteredProducts] = useState(products);
 
@@ -92,23 +54,13 @@ const Protfolio = () => {
         >
           Development
         </button>
-        <button
-          className={`px-4 py-2 rounded-full ${
-            selectedCategory === "App"
-              ? "bg-orange text-white"
-              : "bg-white text-black border border-grey"
-          } transition-colors`}
-          onClick={() => handleCategoryChange("App")}
-        >
-          App
-        </button>
       </div>
       <section className="mx-20 md:mx-28">
         <div className="grid gap-6 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10">
           {filteredProducts.map((index, i) => (
             <div key={index.id} className="relative overflow-hidden group">
               <img
-                className="h-fit md:h-fit w-fit object-cover"
+                className="h-48 w-72 object-cover"
                 src={index.image}
                 alt=""
               />
@@ -127,9 +79,9 @@ const Protfolio = () => {
                       </span>
                     </button>
                     <button className="my-8 flex relative h-10 w-10 items-center justify-center overflow-hidden bg-white2 text-black shadow-2xl rounded-full transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-pink before:duration-500 before:ease-out hover:shadow-pink hover:before:h-56 hover:before:w-56">
-                      <span className="relative z-10">
+                      <Link to={index.link} className="relative z-10">
                         <FaLink />
-                      </span>
+                      </Link>
                     </button>
                   </div>
                 </div>
