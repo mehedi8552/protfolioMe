@@ -1,5 +1,5 @@
 import React from "react";
-import blogData from "../assets/data/blog";
+import BlogData from "./Helper/BlogData";
 import { NavLink } from "react-router-dom";
 import { FaTags, FaUser } from "react-icons/fa";
 const BlogCard = () => {
@@ -17,7 +17,7 @@ const BlogCard = () => {
     <div className="mx-20 xl:mx-32 md:mx-28">
     {/* grid gap-6 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {blogData.map((index) => (
+        {BlogData.map((index) => (
           <div key={index.id} className="space-y-4 w-full bg-white shadow-lg my-8">
             <img className="w-full h-64 object-cover" src={index.img} alt="" />
             <div className="p-6 space-y-4">

@@ -1,5 +1,5 @@
 import React from "react";
-import Products from "../assets/data/blog";
+import Products from "./Helper/BlogData";
 import {
   FaTags,
   FaUser,
