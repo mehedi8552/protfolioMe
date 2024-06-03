@@ -108,7 +108,7 @@ const Protfolio = () => {
           {filteredProducts.map((index, i) => (
             <div key={index.id} className="relative overflow-hidden group">
               <img
-                className="h-64 md:h-96 w-full object-cover"
+                className="h-fit md:h-fit w-fit object-cover"
                 src={index.image}
                 alt=""
               />

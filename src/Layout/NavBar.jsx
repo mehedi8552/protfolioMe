@@ -15,7 +15,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between p-4 bg-white shadow">
+    <nav className="flex items-center justify-between p-4 bg-white shadow z-10">
       {/* Logo */}
       <Link to={"/"} className="text-2xl font-bold pl-10">
         <span className="text-black">MD</span>

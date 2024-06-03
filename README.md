@@ -16,7 +16,8 @@ Scroll top btn - done 31/may
 Service Details - done 02/jun
 VideoBtn - done 02/jun
 Complete all setup page - done 02/jun
-Lazy Loader
+Loader - done 03/jun
+component rename complete -done 3/jun
 Enter my all Data
 Diployment
 

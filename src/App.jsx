@@ -6,11 +6,11 @@ import BlogPage from "./Page/BlogPage";
 import BlogDetailsPage from "./Page/BlogDetailsPage";
 import ContactPage from "./Page/ContactPage";
 import Error from "./Component/Error";
-import TopBtn from "./Component/ScrollToTop";
+import TopBtn from "./Component/Helper/ScrollToTop";
 import ServicePage from "./Page/ServicePage";
 import ServiceDetailsPage from "./Page/ServiceDetailsPage";
 import ProtfolioPage from "./Page/ProtfolioPage";
-import Loading from "./Component/Loading";
+import Loading from "./Component/Helper/Loading";
 
 function App() {
   const [loading, setLoading] = useState(false);

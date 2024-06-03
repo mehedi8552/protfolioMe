@@ -1,20 +1,20 @@
 import React from "react";
-import Loader from "../Component/Loading";
+//import Loader from "../Component/Loading";
 import Layout from "../Layout/Layout";
-import Hero from "../Component/Hero";
+import Hero2 from "../Component/Hero2";
 import Services from "../Component/Services";
-import Hire from "../Component/Hire";
-import Front from "../Component/Front";
+import HireMe from "../Component/HireMe";
+import Hero from "../Component/Hero";
 import Protfolio from "../Component/Protfolio";
 import BlogCard from "../Component/BlogCard";
 import Videobtn from "../Component/Helper/VideoBtn"
 const Home = () => {
   return (
     <Layout>
-      <Front/>
-      <Hero />
+      <Hero/>
+      <Hero2/>
       <Services/>
-      <Hire/>
+      <HireMe/>
       <Protfolio/>
       <BlogCard/>
     </Layout>

@@ -1,8 +1,8 @@
 import React from 'react';
 import Lottie from "lottie-react";
-import animationData from '../assets/Loading.json'; // Replace with your Lottie JSON file path
+import animationData from '../../assets/Loading.json'; // Replace with your Lottie JSON file path
 import { Player } from '@lottiefiles/react-lottie-player';
-import './Helper/Loading.css';
+import './Loading.css';
 const Loading = () => {
 
   return (
