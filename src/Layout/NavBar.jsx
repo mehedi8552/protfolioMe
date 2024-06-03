@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { AiOutlineMenu } from 'react-icons/ai';
 import image from "../assets/user.png";
+import { Link } from "react-router-dom";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOn, setIsOn] = useState(false);
@@ -16,31 +17,31 @@ const NavBar = () => {
   return (
     <nav className="flex items-center justify-between p-4 bg-white shadow">
       {/* Logo */}
-      <div className="text-2xl font-bold pl-10">
-        <span className="text-black">CW</span>
-        <span className="text-pink">T</span>
-      </div>
+      <Link to={"/"} className="text-2xl font-bold pl-10">
+        <span className="text-black">MD</span>
+        <span className="text-pink"> MEHEDI</span>
+      </Link>
 
         
       <div className="hidden md:flex space-x-4 font-sans font-semibold text-grey">
-        <a href="/" className="text-black hover:text-pink-500">
+        <Link to={"/"} className="text-black hover:text-pink-500">
           Home
-        </a>
-        <a href="/about-page" className="text-black hover:text-pink-500">
+        </Link>
+        <Link to={"/about-page"} className="text-black hover:text-pink-500">
           About Us
-        </a>
-        <a href="/service-page" className="text-black hover:text-pink-500">
+        </Link>
+        <Link to={"/service-page"} className="text-black hover:text-pink-500">
           Services
-        </a>
-        <a href="/protfolio-page" className="text-black hover:text-pink-500">
+        </Link>
+        <Link to={"/protfolio-page"} className="text-black hover:text-pink-500">
           Portfolio
-        </a>
-        <a href="/blog-page" className="text-black hover:text-pink-500">
+        </Link>
+        <Link to={"/blog-page"} className="text-black hover:text-pink-500">
           Blog
-        </a>
-        <a href="/contact-us" className="text-black hover:text-pink-500 pr-8">
+        </Link>
+        <Link to={"/contact-us"} className="text-black hover:text-pink-500 pr-8">
           Contact Us
-        </a>
+        </Link>
         <div className="max-md:hidden pr-16">
         <button onClick={toggleMenu2} className="focus:outline-none">
         <AiOutlineMenu size={30}><path

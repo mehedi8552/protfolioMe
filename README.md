@@ -15,7 +15,7 @@ Responsive - done-25/may
 Scroll top btn - done 31/may
 Service Details - done 02/jun
 VideoBtn - done 02/jun
-Complete all setup page
+Complete all setup page - done 02/jun
 Lazy Loader
 Enter my all Data
 Diployment

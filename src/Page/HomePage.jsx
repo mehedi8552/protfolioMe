@@ -1,4 +1,5 @@
 import React from "react";
+import Loader from "../Component/Loading";
 import Layout from "../Layout/Layout";
 import Hero from "../Component/Hero";
 import Services from "../Component/Services";
