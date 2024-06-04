@@ -32,7 +32,6 @@ const Showpic = () => {
                         key={i}
                         small={Linkbtn}
                         large={index.image}
-                        // alt="Hello World!"
                       />
                     </span>
                   </button>

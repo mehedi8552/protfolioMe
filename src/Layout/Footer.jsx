@@ -1,6 +1,6 @@
 import React from "react";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
@@ -22,8 +22,8 @@ const Footer = () => {
             </a>
           </div>
           <div className="h-12 w-12 rounded-full flex justify-center items-center bg-grey2 hover:bg-pink transition hover:-translate-y-1 hover:scale-110">
-            <a href="https://www.instagram.com/sahariar_12/">
-              <FaInstagram color="white" />
+            <a href="https://github.com/mehedi8552">
+              <FaGithub color="white" />
             </a>
           </div>
           <div className="h-12 w-12 rounded-full flex justify-center items-center bg-grey2 hover:bg-pink transition hover:-translate-y-1 hover:scale-110">

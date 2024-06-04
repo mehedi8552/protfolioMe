@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from "../Layout/Layout";
-import Progress from '../Component/Progress';
+import Skill from '../Component/Skill';
 import Resume from '../Component/Resume';
 import ImageViwer from '../Component/ImageViwer';
 const AboutPage = () => {
     return (
         <Layout>
-          <Progress/>  
+          <Skill/>  
           <Resume/>
           <ImageViwer/>
         </Layout>

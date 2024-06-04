@@ -21,25 +21,25 @@ const Resume = () => {
     {
       date: "2002-2004",
       title: "Beluhar Nesaria Alim Madrasah",
-      subtitle: "Dakhil",
+      subtitle: "Dakhil Exam",
     },
   ];
 
   const experience = [
     {
       date: "2023-2024",
-      title: "30+ Long and Short Project",
+      title: "40+ Long and Short Project",
       subtitle: "Hands on Project Complete",
     },
     {
-      date: "----------",
-      title: "----------",
-      subtitle: "----------------------------",
+      date: "2023-2024",
+      title: "100+ Problem Solve",
+      subtitle: "Problem Solveing on CodeMama",
     },
     {
-      date: "----------",
-      title: "----------",
-      subtitle: "----------------------------",
+      date: "2023-2024",
+      title: "18+ Live Test",
+      subtitle: "Limited Time Live test On Ostad",
     },
   ];
 
@@ -49,8 +49,7 @@ const Resume = () => {
         <div>
           <p className="font-abc font-bold text-3xl">My Resume</p>
           <p className="text-grey2 text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit
-            amet maximus est.
+            Here is my Educational experience and Development experience.
           </p>
         </div>
       </div>
