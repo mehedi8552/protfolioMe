@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import lodash from "lodash";
 import products from "./Helper/ProtfolioData";
 import { FaLink } from "react-icons/fa";
-import Eyebtn from "../assets/eye1.png";
+import Eyebtn from "../assets/Image/eye1.png";
 import ModalImage from "react-modal-image";
 import { Link } from "react-router-dom";
 const Protfolio = () => {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { AiOutlineMenu } from "react-icons/ai";
-import image from "../assets/Mehedi.jpg";
+import image from "../assets/Image/Mehedi.jpg";
 import { Link } from "react-router-dom";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);

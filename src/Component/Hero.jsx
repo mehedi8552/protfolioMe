@@ -1,6 +1,6 @@
 import React from "react";
 import resume from "../assets/Jr Web_Developer_Md_Mehedi_Hasan.pdf";
-import image from "../assets/Mehedi.jpg";
+import image from "../assets/Image/Mehedi.jpg";
 
 import Model from "./Helper/VideoBtn.jsx";
 const Hero = () => {

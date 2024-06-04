@@ -1,9 +1,8 @@
 import React from "react";
 import ServiceData from "../Component/Helper/ServiceData";
-import Linkbtn from "../assets/link.png";
+import Linkbtn from "../assets/Image/link.png";
 import ModalImage from "react-modal-image";
 import Data from "../Component/Helper/ProtfolioData";
-import ThambnailValue from "../assets/bg.png";
 import { useParams } from "react-router-dom";
 import {
   FaArrowRight,
@@ -13,11 +12,11 @@ import {
   FaMailBulk,
 } from "react-icons/fa";
 const ServiceDetails = () => {
-const {id} = useParams();
-const numericId = parseInt(id, 10); // Convert id to a number
-const ServiceDaTa = ServiceData.find((item) => item.id === numericId);
+  const { id } = useParams();
+  const numericId = parseInt(id, 10); // Convert id to a number
+  const ServiceDaTa = ServiceData.find((item) => item.id === numericId);
 
-let ProtfolioData = Data.slice(0,4);
+  let ProtfolioData = Data.slice(0, 4);
   const options = {
     animationData: Linkbtn,
     loop: true,
@@ -25,42 +24,39 @@ let ProtfolioData = Data.slice(0,4);
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 md:px-8 lg:px-16 my-8">
       <div className="col-span-3 md:col-span-2">
-        {
-          ServiceDaTa?(
-<div className="space-y-4 bg-white shadow-lg p-8">
-          <img className="mx-auto" src={ServiceDaTa.image} alt="" />
-          <div className="space-y-4">
-            <p className="font-bold text-2xl">{ServiceDaTa.details}</p>
-            <p className="text-gray-600">{ServiceDaTa.description}</p>
-            <ul className="flex gap-2">
-              <span className="font-bold">Tags:</span>
-              <li className="py-2 px-2 bg-gray-200 border">Html</li>
-              <li className="py-2 px-2 bg-gray-200 border">Node.js</li>
-              <li className="py-2 px-2 bg-gray-200 border">Express.js</li>
-            </ul>
-            <ul className="flex gap-2">
-              <span className="font-bold">Share:</span>
-              <a className="py-2 px-2 bg-gray-200 border hover:bg-pink hover:text-white">
-                <FaFacebookF />
-              </a>
-              <a className="py-2 px-2 bg-gray-200 border hover:bg-pink hover:text-white">
-                <FaLinkedinIn />
-              </a>
-              <a className="py-2 px-2 bg-gray-200 border hover:bg-pink hover:text-white">
-                <FaMailBulk />
-              </a>
-              <a className="py-2 px-2 bg-gray-200 border hover:bg-pink hover:text-white">
-                <FaInstagram />
-              </a>
-            </ul>
+        {ServiceDaTa ? (
+          <div className="space-y-4 bg-white shadow-lg p-8">
+            <img className="mx-auto" src={ServiceDaTa.image} alt="" />
+            <div className="space-y-4">
+              <p className="font-bold text-2xl">{ServiceDaTa.details}</p>
+              <p className="text-gray-600">{ServiceDaTa.description}</p>
+              <ul className="flex gap-2">
+                <span className="font-bold">Tags:</span>
+                <li className="py-2 px-2 bg-gray-200 border">Html</li>
+                <li className="py-2 px-2 bg-gray-200 border">Node.js</li>
+                <li className="py-2 px-2 bg-gray-200 border">Express.js</li>
+              </ul>
+              <ul className="flex gap-2">
+                <span className="font-bold">Share:</span>
+                <a className="py-2 px-2 bg-gray-200 border hover:bg-pink hover:text-white">
+                  <FaFacebookF />
+                </a>
+                <a className="py-2 px-2 bg-gray-200 border hover:bg-pink hover:text-white">
+                  <FaLinkedinIn />
+                </a>
+                <a className="py-2 px-2 bg-gray-200 border hover:bg-pink hover:text-white">
+                  <FaMailBulk />
+                </a>
+                <a className="py-2 px-2 bg-gray-200 border hover:bg-pink hover:text-white">
+                  <FaInstagram />
+                </a>
+              </ul>
+            </div>
           </div>
-        </div>
-     
-          ):(
-            <h1>No Data Is There.......</h1>
-          )
-        }
-         </div>
+        ) : (
+          <h1>No Data Is There.......</h1>
+        )}
+      </div>
       <div className="col-span-3 md:col-span-1 space-y-8">
         <div className="bg-white shadow-lg p-4">
           <p className="text-2xl">Our Services</p>

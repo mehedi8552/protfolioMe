@@ -1,6 +1,6 @@
 import React from "react";
 import { useLottie } from "lottie-react";
-import Linkbtn from "../assets/link.png";
+import Linkbtn from "../assets/Image/link.png";
 import ModalImage from "react-modal-image";
 import Data from "../Component/Helper/ProtfolioData";
 
