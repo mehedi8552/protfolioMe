@@ -2,31 +2,10 @@ import React from "react";
 import { useLottie } from "lottie-react";
 import Linkbtn from "../assets/link.png";
 import ModalImage from "react-modal-image";
-import MainimageValue from "../assets/hero.png";
-import ThambnailValue from "../assets/bg.png";
+import Data from "../Component/Helper/ProtfolioData";
+
 const Showpic = () => {
-  const data = [
-    {
-      id: 1,
-      Mainimage: MainimageValue,
-      Thambnail: ThambnailValue,
-    },
-    {
-      id: 2,
-      Mainimage: MainimageValue,
-      Thambnail: ThambnailValue,
-    },
-    {
-      id: 3,
-      Mainimage: MainimageValue,
-      Thambnail: ThambnailValue,
-    },
-    {
-      id: 4,
-      Mainimage: MainimageValue,
-      Thambnail: ThambnailValue,
-    },
-  ];
+ let ProtfolioData = Data.slice(0, 4)
   const options = {
     animationData: Linkbtn,
     loop: true,
@@ -36,11 +15,11 @@ const Showpic = () => {
   return (
     <section class="mx-auto w-fit">
       <div class="grid grid-cols-4 gap-4 ">
-        {data.map((index, i) => (
+        {ProtfolioData.map((index, i) => (
           <div class=" relative overflow-hidden group">
             <img
               class="h-96 w-full object-cover"
-              src={index.Thambnail}
+              src={index.image}
               alt=""
             />
             <div class=" absolute h-full w-full bg-white/90 flex items-center justify-center -bottom-9 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -52,7 +31,7 @@ const Showpic = () => {
                        className=""
                         key={i}
                         small={Linkbtn}
-                        large={index.Mainimage}
+                        large={index.image}
                         // alt="Hello World!"
                       />
                     </span>

@@ -1,11 +1,11 @@
-import FitnessImage from "../../assets/ServiceImage/FitnessImage.png"
-import CdsImage from "../../assets/ServiceImage/CdsImage.png"
-import TouringImage from "../../assets/ServiceImage/TouringImage.png"
+import FitnessImage from "../../assets/PortfolioImage/FitnessImage.png"
+import CdsImage from "../../assets/PortfolioImage/CdsImage.png"
+import TouringImage from "../../assets/PortfolioImage/TouringImage.png"
 
-import Contact from "../../assets/ServiceImage/Contact.png"
-import CRUD from "../../assets/ServiceImage/CRUD Project.png"
-import Protfolio from "../../assets/ServiceImage/Protfolio.png"
-import Shope from "../../assets/ServiceImage/Shope.png"
+import Contact from "../../assets/PortfolioImage/Contact.png"
+import CRUD from "../../assets/PortfolioImage/CRUD Project.png"
+import Protfolio from "../../assets/PortfolioImage/Protfolio.png"
+import Shope from "../../assets/PortfolioImage/Shope.png"
 
 const products = [
     {

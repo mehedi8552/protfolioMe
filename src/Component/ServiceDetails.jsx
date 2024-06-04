@@ -2,13 +2,10 @@ import React from "react";
 import ServiceData from "../Component/Helper/ServiceData";
 import Linkbtn from "../assets/link.png";
 import ModalImage from "react-modal-image";
-import MainimageValue from "../assets/hero.png";
+import Data from "../Component/Helper/ProtfolioData";
 import ThambnailValue from "../assets/bg.png";
 import { useParams } from "react-router-dom";
 import {
-  FaTags,
-  FaUser,
-  FaSearch,
   FaArrowRight,
   FaFacebookF,
   FaInstagram,
@@ -20,28 +17,7 @@ const {id} = useParams();
 const numericId = parseInt(id, 10); // Convert id to a number
 const ServiceDaTa = ServiceData.find((item) => item.id === numericId);
 
-  const data = [
-    {
-      id: 1,
-      Mainimage: MainimageValue,
-      Thambnail: ThambnailValue,
-    },
-    {
-      id: 2,
-      Mainimage: MainimageValue,
-      Thambnail: ThambnailValue,
-    },
-    {
-      id: 3,
-      Mainimage: MainimageValue,
-      Thambnail: ThambnailValue,
-    },
-    {
-      id: 4,
-      Mainimage: MainimageValue,
-      Thambnail: ThambnailValue,
-    },
-  ];
+let ProtfolioData = Data.slice(0,4);
   const options = {
     animationData: Linkbtn,
     loop: true,
@@ -109,11 +85,11 @@ const ServiceDaTa = ServiceData.find((item) => item.id === numericId);
         <div className="bg-white shadow-lg p-4">
           <p className="text-2xl">Our Portfolio</p>
           <div class="grid grid-cols-2 gap-2 p-2">
-            {data.map((index, i) => (
+            {ProtfolioData.map((index, i) => (
               <div class=" relative overflow-hidden group">
                 <img
-                  class="h-auto w-auto object-cover"
-                  src={index.Thambnail}
+                  class="h-32 w-auto object-cover"
+                  src={index.image}
                   alt=""
                 />
                 <div class=" absolute h-full w-full bg-white/90 flex items-center justify-center -bottom-9 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -125,7 +101,7 @@ const ServiceDaTa = ServiceData.find((item) => item.id === numericId);
                             className="flex justify-center text-center"
                             key={i}
                             small={Linkbtn}
-                            large={index.Mainimage}
+                            large={index.image}
                           />
                         </span>
                       </button>
