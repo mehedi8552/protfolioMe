@@ -1,7 +1,51 @@
-import React from "react";
-import { FaAddressCard, FaMailBulk, FaPhone } from "react-icons/fa";
+import React, { useRef } from "react";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { FaMailBulk, FaPhone } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    u_name: "",
+    u_email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    if (formData.u_name && formData.u_email && formData.message) {
+      toast.success("Your Message Send Success!");
+      setFormData({
+        u_name: "",
+        u_email: "",
+        message: "",
+      });
+      emailjs
+        .sendForm("service_bxgj6je", "template_6vecemf", form.current, {
+          publicKey: "McwWtiDQswb2V4eyZ",
+        })
+        .then(
+          () => {
+            console.log("SUCCESS!");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
+    } else {
+      toast.error("Your input field is empty!");
+    }
+  };
   return (
     <section className="my-20">
       <div className="space-y-4  md:flex md:justify-center  space-x-14 w-full">
@@ -37,19 +81,23 @@ const Contact = () => {
             Get In Touch
           </h1>
           <h1 className="flex justify-center text-xl px-8 text-center text-grey2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit
-            amet maximus est.
+            Contact with Me For any quary
           </h1>
         </div>
-        {/* ref={form} onSubmit={sendEmail} */}
         <div class="flex justify-center mx-10 mt-14 md:mb-10">
-          <form class="w-full md:w-full md:mx-80 space-y-3">
+          <form
+            class="w-full md:w-full md:mx-80 space-y-3"
+            ref={form}
+            onSubmit={sendEmail}
+          >
             <div>
               <p class="font-semibold text-grey2 pb-2">Your Name</p>
               <input
                 class="w-full h-10 border border-grey2 focus:outline-pink px-3"
                 type="text"
                 name="u_name"
+                value={formData.u_name}
+                onChange={handleChange}
               />
             </div>
             <div>
@@ -58,6 +106,8 @@ const Contact = () => {
                 class="w-full h-10 border border-grey2 focus:outline-pink px-3"
                 type="email"
                 name="u_email"
+                value={formData.u_email}
+                onChange={handleChange}
               />
             </div>
             <div>
@@ -65,6 +115,8 @@ const Contact = () => {
               <textarea
                 class="w-full h-20 border border-grey2 focus:outline-pink px-3"
                 name="message"
+                value={formData.message}
+                onChange={handleChange}
               ></textarea>
             </div>
 
@@ -75,6 +127,7 @@ const Contact = () => {
               <span className="relative z-10">Send Message</span>
             </button>
           </form>
+          <ToastContainer />
         </div>
       </div>
     </section>
