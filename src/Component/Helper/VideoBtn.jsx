@@ -26,7 +26,7 @@ export class VideoBtn extends Component {
             channel="youtube"
             youtube={{ mute: 1, autoplay: 1}}
             isOpen={this.state.isOpen}
-            videoId="HYUpNJJELeE"
+            videoId="lR8FTt_BR00"
             allowFullScreen
             onClose={() => this.setState({ isOpen: false })}
           />

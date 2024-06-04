@@ -1,10 +1,6 @@
 import React from "react";
 import { FaXTwitter } from "react-icons/fa6";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
@@ -15,9 +11,9 @@ const Footer = () => {
           <span className="text-pink">T</span>
         </div>
         <p className="text-justify text-white2 py-3  font-sans_serif pr-8 pb-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim magni
-          reprehenderit dolor excepturi corrupti est, sunt optio voluptatibus at
-          molestiae.
+          Welcome to my creative corner! one Enthusiastic Full stack web
+          developer & UI/UX designer with two years of digital Experience
+          creating experiences that are visible Stunning and user-friendly.
         </p>
         <div className="flex justify-start space-x-2 pt-2 ">
           <div className="h-12 w-12 rounded-full flex justify-center items-center bg-grey2 hover:bg-pink transition hover:-translate-y-1 hover:scale-110">
@@ -50,15 +46,15 @@ const Footer = () => {
           </p>
           <div>
             <p className="font-abc font-bold text-xl text-white">Locations</p>
-            <p className="text-white2">New York, USA</p>
+            <p className="text-white2">Mirpur 11,Dhaka,Bangladesh</p>
           </div>
           <div>
             <p className="font-abc font-bold text-xl text-white">Email</p>
-            <p className="text-white2">hello123@example.com</p>
+            <p className="text-white2">mehedi193002106@gmail.com</p>
           </div>
           <div>
             <p className="font-abc font-bold text-xl text-white">Phone</p>
-            <p className="text-white2">+1-3454-5678-77</p>
+            <p className="text-white2">+8801770228395</p>
           </div>
         </div>
       </div>
@@ -78,7 +74,7 @@ const Footer = () => {
               </NavLink>
             </div>
             <div>
-              <NavLink className="text-white2 py-8" href="">
+              <NavLink to={"/contact-us"} className="text-white2 py-8">
                 Contact Me
               </NavLink>
             </div>

@@ -1,6 +1,6 @@
 import React from "react";
-import resume from "../assets/MD.Mehedi Hasan.pdf";
-import image from "../assets/hero.png";
+import resume from "../assets/Jr Web_Developer_Md_Mehedi_Hasan.pdf";
+import image from "../assets/Mehedi.jpg";
 
 import Model from "./Helper/VideoBtn.jsx";
 const Hero = () => {
@@ -36,7 +36,7 @@ const Hero = () => {
         <div className="md:w-6/12 w-full flex items-start md:items-start">
           <div className="flex justify-center md:justify-end w-full">
             <img
-              className="w-full md:w-auto md:mt-0"
+              className=" w-fit h-fit xl:h-9/12 xl:w-9/12 xl:mx-32 xl:my-24 hover:shadow-xl  md:w-fit rounded-full"
               src={image}
               alt="Profile Image"
             />

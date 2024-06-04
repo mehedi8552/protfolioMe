@@ -10,7 +10,7 @@ const BlogCard = () => {
       <div className="">
         <p className="text-3xl font-bold mb-2">Latest Blog</p>
         <p className="text-grey mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet maximus est.
+        Here Is Some Of Our Recent Latest Blog.
         </p>
       </div>
     </div>

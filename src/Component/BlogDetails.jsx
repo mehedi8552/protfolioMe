@@ -62,10 +62,10 @@ const BlogDetails = () => {
     <div className="col-span-3 md:col-span-1 space-y-8">
       <div className="bg-white shadow-lg p-4">
         <p className="text-2xl">Search</p>
-        <div className="relative my-2">
+        <div className="relative my-2 z-10">
           <input
             type="search"
-            className="w-full bg-purple-white shadow rounded p-3"
+            className="w-full bg-purple-white shadow rounded p-3 "
             placeholder="Search by name..."
           />
           <span className="absolute top-0 right-0 mt-3 mr-4">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import { AiOutlineMenu } from 'react-icons/ai';
-import image from "../assets/user.png";
+import { AiOutlineMenu } from "react-icons/ai";
+import image from "../assets/Mehedi.jpg";
 import { Link } from "react-router-dom";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +22,6 @@ const NavBar = () => {
         <span className="text-pink"> MEHEDI</span>
       </Link>
 
-        
       <div className="hidden md:flex space-x-4 font-sans font-semibold text-grey">
         <Link to={"/"} className="text-black hover:text-pink-500">
           Home
@@ -39,29 +38,33 @@ const NavBar = () => {
         <Link to={"/blog-page"} className="text-black hover:text-pink-500">
           Blog
         </Link>
-        <Link to={"/contact-us"} className="text-black hover:text-pink-500 pr-8">
+        <Link
+          to={"/contact-us"}
+          className="text-black hover:text-pink-500 pr-8"
+        >
           Contact Us
         </Link>
-        <div className="max-md:hidden pr-16">
-        <button onClick={toggleMenu2} className="focus:outline-none">
-        <AiOutlineMenu size={30}><path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            /></AiOutlineMenu>
-        </button>
-      </div>
+        <div className="max-md:hidden pr-16  ">
+          <button onClick={toggleMenu2} className="focus:outline-none">
+            <AiOutlineMenu size={30}>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </AiOutlineMenu>
+          </button>
+        </div>
       </div>
 
       {/* Hamburger Icon for Laptop */}
-
 
       {/* Mobile Menu */}
       <div
         className={`${
           isOn ? "block" : "hidden"
-        } absolute  top-16 right-2 w-96  bg-white shadow-lg`}
+        } absolute  top-16 right-2 w-96 z-40  bg-white shadow-lg`}
       >
         <div>
           <nav className="bg-black">
@@ -73,18 +76,18 @@ const NavBar = () => {
             </div>
 
             <p className="font-bold text-xl">Name :</p>
-            <p className="text-xl text-gray-900">Mirta Akins</p>
+            <p className="text-xl text-gray-900">Md Mehedi Hasan</p>
             <p className="font-bold text-xl">Email :</p>
-            <p className="text-xl text-gray-600">example123@gmail.com</p>
+            <p className="text-xl text-gray-600">mehedi193002106@gmail.com</p>
             <p className="font-bold text-xl">Phone :</p>
-            <p className="text-xl text-gray-600">(54) 1234 456 526</p>
+            <p className="text-xl text-gray-600">+8801770228395</p>
             <p className="font-bold text-xl">Address :</p>
-            <p className="text-xl text-gray-600">4155 Mann Island, Liverpool L3, United Kingdom.</p>
+            <p className="text-xl text-gray-600">Mirpur 11,Dhaka,Bangladesh</p>
             <p className="font-bold text-xl">About Me :</p>
-            <p className="text-justify pb-8 text-xl text-gray-600 " >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown
+            <p className="text-justify pb-8 text-xl text-gray-600 ">
+              Welcome to my creative corner! one Enthusiastic Full stack web
+              developer & UI/UX designer with two years of digital Experience
+              creating experiences that are visible Stunning and user-friendly.
             </p>
           </div>
         </div>
