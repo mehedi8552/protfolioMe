@@ -11,35 +11,35 @@ const Resume = () => {
     {
       date: "2019-2024",
       title: "Green University Bangladesh",
-      subtitle: "Msc in Computer Engineer",
+      subtitle: "Bsc in Computer Engineer",
     },
     {
       date: "2014-2018",
       title: "Ashanullah Technical University",
-      subtitle: "MSC in Computer Engineer",
+      subtitle: "Diploma in Civil Engineer",
     },
     {
       date: "2002-2004",
-      title: "Oxford University",
-      subtitle: "MSC in Computer Engineer",
+      title: "Beluhar Nesaria Alim Madrasah",
+      subtitle: "Dakhil",
     },
   ];
 
   const experience = [
     {
-      date: "2010-2012",
-      title: "Envato Company",
-      subtitle: "Full Stack Web Developer",
+      date: "2023-2024",
+      title: "30+ Long and Short Project",
+      subtitle: "Hands on Project Complete",
     },
     {
-      date: "2012-2014",
-      title: "Envato Company",
-      subtitle: "Full Stack Web Developer",
+      date: "----------",
+      title: "----------",
+      subtitle: "----------------------------",
     },
     {
-      date: "2014-2021",
-      title: "Envato Company",
-      subtitle: "Full Stack Web Developer",
+      date: "----------",
+      title: "----------",
+      subtitle: "----------------------------",
     },
   ];
 
