@@ -23,24 +23,24 @@ const NavBar = () => {
       </Link>
 
       <div className="hidden md:flex space-x-4 font-sans font-semibold text-grey">
-        <Link to={"/"} className="text-black hover:text-pink-500">
+        <Link to={"/"} className="block px-4 py-2 text-black hover:text-pink-500">
           Home
         </Link>
-        <Link to={"/about-page"} className="text-black hover:text-pink-500">
+        <Link to={"/about-page"} className="block px-4 py-2 text-black hover:text-pink-500">
           About Us
         </Link>
-        <Link to={"/service-page"} className="text-black hover:text-pink-500">
+        <Link to={"/service-page"} className="block px-4 py-2 text-black hover:text-pink-500">
           Services
         </Link>
-        <Link to={"/protfolio-page"} className="text-black hover:text-pink-500">
+        <Link to={"/protfolio-page"} className="block px-4 py-2 text-black hover:text-pink-500">
           Portfolio
         </Link>
-        <Link to={"/blog-page"} className="text-black hover:text-pink-500">
+        <Link to={"/blog-page"} className="block px-4 py-2 text-black hover:text-pink-500">
           Blog
         </Link>
         <Link
           to={"/contact-us"}
-          className="text-black hover:text-pink-500 pr-8"
+          className="block px-4 py-2 text-black hover:text-pink-500 pr-8"
         >
           Contact Us
         </Link>
@@ -112,27 +112,28 @@ const NavBar = () => {
           isOpen ? "block" : "hidden"
         } md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg`}
       >
-        <a href="#" className="block px-4 py-2 text-black hover:text-pink-500">
+       
+        <Link to={"/"} className="block px-4 py-2 text-black hover:text-pink-500">
           Home
-        </a>
-        <a href="#" className="block px-4 py-2 text-black hover:text-pink-500">
+        </Link>
+        <Link to={"/about-page"} className="block px-4 py-2 text-black hover:text-pink-500">
           About Us
-        </a>
-        <a href="#" className="block px-4 py-2 text-black hover:text-pink-500">
-          Page
-        </a>
-        <a href="#" className="block px-4 py-2 text-black hover:text-pink-500">
+        </Link>
+        <Link to={"/service-page"} className="block px-4 py-2 text-black hover:text-pink-500">
           Services
-        </a>
-        <a href="#" className="block px-4 py-2 text-black hover:text-pink-500">
+        </Link>
+        <Link to={"/protfolio-page"} className="block px-4 py-2 text-black hover:text-pink-500">
           Portfolio
-        </a>
-        <a href="#" className="block px-4 py-2 text-black hover:text-pink-500">
+        </Link>
+        <Link to={"/blog-page"} className="block px-4 py-2 text-black hover:text-pink-500">
           Blog
-        </a>
-        <a href="#" className="block px-4 py-2 text-black hover:text-pink-500">
+        </Link>
+        <Link
+          to={"/contact-us"}
+          className="block px-4 py-2 text-black hover:text-pink-500 pr-8"
+        >
           Contact Us
-        </a>
+        </Link>
       </div>
     </nav>
   );
