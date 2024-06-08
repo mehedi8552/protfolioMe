@@ -5,19 +5,19 @@ const Services = () => {
   
 
   return (
-    <div className="h-auto w-full bg-white2">
+    <div className="h-auto w-full bg-white3">
       <div className="flex items-center justify-center">
         <div>
           <h1 className="flex justify-center text-3xl font-bold text-grey2 font-abc mt-16">
             My Services
           </h1>
-          <h1 className="flex justify-center text-xl px-4 md:px-8 text-center text-grey2 mt-4">
+          <h1 className="flex justify-center px-4 md:px-8 text-center text-grey2 mt-4">
           Providing expert Web Design, Web Development, UI/UX Design, and Graphic Design.
           </h1>
         </div>
       </div>
-      <div className="mx-20 md:mx-28">
-        <div className="grid gap-6 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10">
+      <div className="mx-6 md:mx-32 lg:mx-30 lg:pb-8">
+        <div className="grid gap-6 lg:gap-6 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10">
           {data.map((index) => (
             <div
               key={index.id}

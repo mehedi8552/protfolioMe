@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section>
       <div className="md:flex justify-between bg-white">
-        <div className="md:w-7/12 w-full my-12 mx-4 p-6 md:my-28 md:mx-8 md:p-12 space-y-4">
+        <div className="md:w-7/12 w-full my-12 mx-4 p-6 md:my-28 md:mx-8 md:p-12 xl:mx-28 space-y-4">
           <p className="font-abc font-bold text-xl md:text-2xl text-grey2">
             Hello, My Name Is Md Mehedi Hasan
           </p>
@@ -36,7 +36,7 @@ const Hero = () => {
         <div className="md:w-6/12 w-full flex items-start md:items-start">
           <div className="flex justify-center md:justify-end w-full">
             <img
-              className=" w-fit h-fit xl:h-9/12 xl:w-9/12 xl:mx-32 xl:my-24 hover:shadow-xl  md:w-fit rounded-full"
+              className=" w-fit h-fit pb-4 px-4 xl:h-9/12 xl:w-9/12 xl:mx-32 xl:my-24 md:my-32 md:w-fit rounded-full"
               src={image}
               alt="Profile Image"
             />

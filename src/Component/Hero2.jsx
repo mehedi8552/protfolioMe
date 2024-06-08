@@ -10,9 +10,9 @@ import { NavLink } from "react-router-dom";
 const Hero2 = () => {
   return (
 <section className=" md:flex md:justify-center md:items-center h-screen mb-24">
-  <div className="md:w-6/12 w-full pl-4 pt-2 md:flex md:justify-center">
-    <div className="h-fit w-fit xl:h-96 xl:w-96 mx-2 rounded-xl bg-white3 hover:shadow-2xl">
-      <div className="flex justify-center">
+  <div className="md:w-6/12 w-full  pt-2 md:flex md:justify-center">
+    <div className="h-fit w-fit xl:h-full xl:w-full xl:mx-32 md:mx-16 mx-2 rounded-xl bg-white3 hover:shadow-2xl">
+      <div className="flex items-center justify-center">
         <img className="h-full xl:h-96 xl:w-96  w-full px-6" src={image} alt="" />
       </div>
     </div>
