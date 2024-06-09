@@ -44,16 +44,16 @@ const Resume = () => {
   ];
 
   return (
-    <div className="h-fit p-10 bg-white3">
+    <div className="h-fit p-10 bg-white3 xl:px-24">
       <div className="flex justify-center text-center pt-16 ">
         <div>
           <p className="font-abc font-bold text-3xl">My Resume</p>
-          <p className="text-grey2 text-xl">
+          <p className="text-grey2 pt-4">
             Here is my Educational experience and Development experience.
           </p>
         </div>
       </div>
-      <div className="flex flex-wrap  justify-center  bg-white3 shadow-lg rounded-lg m-10">
+      <div className="flex flex-wrap  justify-center  bg-white shadow-lg rounded-lg m-10">
         <div className="w-full md:w-1/2 px-4 mb-8">
           <h2 className="text-2xl font-bold mb-4 font-abc pt-12">Education</h2>
           <VerticalTimeline>

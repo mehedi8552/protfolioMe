@@ -11,18 +11,18 @@ const Progress = () => {
   ];
 
   return (
-    <div className="py-4 bg-white3">
+    <div className="py-4 bg-white3 xl:px-24">
       <div className="flex justify-center text-center pt-16">
         <div>
           <p className="font-abc font-bold text-3xl"> My Skill</p>
-          <p className="text-grey2 text-xl">
+          <p className="text-grey2 pt-4">
             Providing expert Web Design, Web Development, UI/UX Design, and
             Graphic Design.
           </p>
         </div>
       </div>
 
-      <div className=" bg-white3 rounded-lg mx-10 shadow-lg mt-11  pb-4">
+      <div className=" bg-white rounded-lg mx-10 shadow-lg mt-11  pb-4">
         <div className="grid grid-cols-2 gap-6 m-6">
           {skills.map((skill, index) => (
             <ProgressBar

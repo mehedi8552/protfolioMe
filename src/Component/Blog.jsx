@@ -4,13 +4,13 @@ import { FaTags, FaUser, FaSearch, FaArrowRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 const Blog = () => {
   return (
-    <div className="max-w-screen-2xl mx-10 px-4 lg:px-18 my-16">
+    <div className="max-w-screen-2xl mx-10 px-4 lg:px-18 my-16 xl:mx-28">
       <div className="text-center">
         <p className="text-3xl font-bold mb-2">Latest Blog</p>
         <p className="text-grey mb-4">Here Is Some Of Our Recent Blog List.</p>
       </div>
       <div className="flex flex-col lg:flex-row justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
           {BlogData.map((index) => (
             <div
               key={index.id}
@@ -41,7 +41,7 @@ const Blog = () => {
             </div>
           ))}
         </div>
-        <div className="w-full lg:w-80 mt-8 lg:mt-0 lg:ml-8 space-y-8">
+        <div className="w-full xl:w-96 lg:w-80 mt-8 lg:mt-0 lg:ml-8 space-y-8">
           <div className="bg-white shadow-lg p-4 mt-8 rounded-lg">
             <p className="text-2xl mb-4 ">Search</p>
             <div className="relative">

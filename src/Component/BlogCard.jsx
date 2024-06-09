@@ -14,8 +14,7 @@ const BlogCard = () => {
         </p>
       </div>
     </div>
-    <div className="mx-20 xl:mx-32 md:mx-28">
-    {/* grid gap-6 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 */}
+    <div className="mx-20 xl:mx-36 md:mx-28">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {BlogData.map((index) => (
           <div key={index.id} className="space-y-4 w-full bg-white shadow-lg my-8">
@@ -27,7 +26,7 @@ const BlogCard = () => {
                 <FaTags className="text-pink text-2xl ml-4" />
                 <span>Technology</span>
               </div>
-              <p className="font-abc text-grey2 font-bold text-2xl">
+              <p className=" text-grey2 font-bold text-xl">
                 {index.title}
               </p>
               <p className="text-grey2">{index.body.slice(0, 70)}...</p>
