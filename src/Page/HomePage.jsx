@@ -7,7 +7,6 @@ import HireMe from "../Component/HireMe";
 import Hero from "../Component/Hero";
 import Protfolio from "../Component/Protfolio";
 import BlogCard from "../Component/BlogCard";
-import Videobtn from "../Component/Helper/VideoBtn"
 const Home = () => {
   return (
     <Layout>
