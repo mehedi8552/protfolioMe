@@ -81,7 +81,7 @@ const Contact = () => {
             Get In Touch
           </h1>
           <h1 className="flex justify-center text-xl px-8 text-center text-grey2">
-            Contact with Me For any urgency
+            Contact with Me For any type of project.
           </h1>
         </div>
         <div class="flex justify-center mx-10 mt-14 md:mb-10">

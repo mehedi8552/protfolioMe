@@ -1,6 +1,8 @@
 import FitnessImage from "../../assets/PortfolioImage/FitnessImage.png"
 import CdsImage from "../../assets/PortfolioImage/CdsImage.png"
 import TouringImage from "../../assets/PortfolioImage/TouringImage.png"
+import LMS from "../../assets/PortfolioImage/LMS.png"
+import LandingPage from "../../assets/PortfolioImage/LandingPage.png"
 
 import Contact from "../../assets/PortfolioImage/Contact.png"
 import CRUD from "../../assets/PortfolioImage/CRUD Project.png"
@@ -57,7 +59,21 @@ const products = [
         image: Shope,
         link:"https://mehedi-shpe.netlify.app/"
       },
-    // Add more product objects as needed...
+      {
+        id: 8,
+        title: "Landing Page",
+        category: "Development",
+        image: LandingPage,
+        link:"https://655a54875ad363643219089f--illustrious-buttercream-daacf2.netlify.app/"
+      },
+      {
+        id: 9,
+        title: "LMS System",
+        category: "Development",
+        image: LMS,
+        link:"https://learning-management-systemto.onrender.com/"
+      },
+
   ];
 
   export default products;
